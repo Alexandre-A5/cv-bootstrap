@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Test</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon CV</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <h1>Hello world</h1>
+<body class="bg-dark text-white font-Montserrat">
+  <div class="container py-5">
+    <div class="row"> 
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <!-- Première colonne -->
+      <div class="col-md-4 ">
+        <div class="bg-secondary p-4 rounded">
+          <div class="text-center">
+            <img src="img/avatar(1).jpg" class="rounded-circle img-fluid w-50" alt="Profile Picture">
+            <h3>Alexandre Augé</h3>
+            <p class="font-italic">Dev front end</p>
+          </div>
+          <hr class="bg-light">
+          <div class="my-4">
+            <h5>Contact</h5>
+            <p><i class="bi bi-envelope my-2"></i> alexandreaugepro@gmail.com</p>
+            <p><i class="bi bi-telephone my-2"></i> 07.83.41.57.29</p>
+            <p><i class="bi bi-geo-alt my-2"></i> Rennes, 35200</p>
+          </div>
+          <hr class="bg-light">
+          <div class="my-4">
+            <h5>Skills</h5>
+            <div class="d-flex">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item text-white bg-secondary">Autonomie</li>
+                <li class="list-group-item text-white bg-secondary">Créatif</li>
+                <li class="list-group-item text-white bg-secondary">Travail en équipe</li>
+                <li class="list-group-item text-white bg-secondary">Gestion de projet</li>
+                <li class="list-group-item text-white bg-secondary">Communication</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="bg-light">
+          <div class="my-4 text-center">
+            <a href="linkedin.com"><i class="fa-brands fa-linkedin fa-2x text-light mx-5"></i></a>
+            <a href="#"><i class="fa-solid fa-globe fa-2x text-light mx-5"></i></a>
+          </div>
         </div>
-        <div class="carousel-inner" id="img-sizer">
-          <div class="carousel-item active">
-            <img src="img/image3.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/photo_avis_client.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/réparation.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
+      <!-- Deuxième colonne -->
+
+      <div class="col-md-8">
+        <div class="bg-secondary p-4 rounded">
+          <h2 class="text-warning">A propos de moi</h2>
+          <p>Développeur web passionné et créatif, je suis à la recherche d'une alternance pour mettre en pratique mes compétences en développement front-end et en design graphique au sein d'une entreprise innovante.</p>
+          <h3 class="text-warning mt-4">Formation</h3>
+          <ul>
+            <li>2024 : Formation dev front - Simplon</li>
+            <li>2022 : DUT MMI (Métiers du Multimédia et de l'Internet) - Université Gustave Eiffel</li>
+            <li>2020 : Baccalauréat Economique et Sociale - Lycée Georges Clémenceau</li>
+          </ul>
+          <h3 class="text-warning mt-4">Expérience</h3>
+          <ul>
+            <li>2022-2024 : Agent de production - Crêperie LeGuen</li>
+            <li>2022 : Graphiste - Vitami</li>
+            <li>2022 : Monteur / VFX - Film d'animation "MOLLY"</li>
+          </ul>
+          <h3 class="text-warning mt-4">Projets</h3>
+          <div class="d-flex">
+            <div id="carouselExampleIndicators" class="carousel slide w-50" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/CoverDONOVANMITCHELL.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/CoverDROSE.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/EliTomacPoster.png" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div id="carouselExampleIndicators2" class="carousel slide w-50" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/Package_Maze.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/focus.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/claw.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
